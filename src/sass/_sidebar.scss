@@ -45,7 +45,7 @@
 
 .sidebar-menu {
   background: $sidebar-nav;
-  opacity: 0;
+  opacity: 1;
 
 }
 
@@ -119,10 +119,7 @@
     justify-content: center;
     margin-top: 10px;
     color: $side-bar-font-color;
-    font-size: 8px;
-    margin-left: -30px;
-    
-    
+    margin-right: 25px;
   }
 
   .manager-wrapper {
@@ -157,8 +154,6 @@
       }
     }
 
-
-
     .manager-image {
       width: 50px;
       height: 50px;
@@ -168,6 +163,7 @@
     }
   }
 }
+
 .tab-content {
   display: none;
 }
@@ -177,5 +173,5 @@
 }
 
 .active {
-  opacity: 1;
+  opacity: 0;
 }

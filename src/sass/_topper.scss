@@ -2,8 +2,8 @@
   display: flex;
   height: 80px;
   //margin-left: -30px;
- // background: white;
- // margin-top: 0;
+  // background: white;
+  // margin-top: 0;
   //border: 1px solid #EEEEEB;
 }
 
@@ -30,13 +30,11 @@
     height: 11px;
     width: 11px;
     margin-top: 10px;
-    }
+  }
 
-    
-
-    a:hover {
-      transform: translate(-1px, -1px);
-    }
+  a:hover {
+    transform: translate(-1px, -1px);
+  }
 }
 
 .topper-left {

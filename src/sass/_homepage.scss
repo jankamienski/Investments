@@ -22,7 +22,7 @@ body {
 }
 
 .grid-container {
-  border: 1px solid red;
+  //border: 1px solid red;
   display: grid;
   height: 1724px;
   width: 1280px;
@@ -39,7 +39,7 @@ body {
 
 .item {
   //margin: 1px;
-  border: 1px solid black;
+  //border: 1px solid black;
   background: white;
 }
 
@@ -70,9 +70,6 @@ body {
   grid-row: general-statistic-start / links-start;
   margin: 0.75% 1.5% 1.5% 1.5%; 
 }
-
-
-
 
 .links {
   grid-column: sidebar-end / content-end;
