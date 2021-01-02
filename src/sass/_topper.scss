@@ -5,6 +5,7 @@
   // background: white;
   // margin-top: 0;
   //border: 1px solid #EEEEEB;
+  justify-content: flex-end;
 }
 
 .topper-cell {
@@ -35,10 +36,6 @@
   a:hover {
     transform: translate(-1px, -1px);
   }
-}
-
-.topper-left {
-  width: 613px;
 }
 
 .topper-amount {

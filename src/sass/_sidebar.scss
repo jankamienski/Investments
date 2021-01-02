@@ -172,6 +172,10 @@
   display: block;
 }
 
-.active {
+body.active .sidebar-menu {
   opacity: 0;
+}
+
+.side-topper {
+  display: none;
 }

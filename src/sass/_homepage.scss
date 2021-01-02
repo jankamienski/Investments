@@ -9,8 +9,9 @@ body {
 .general-wrapper {
   display: flex;
   justify-content: center;
-  padding: 20px 18%;
-  width: 700px;
+  margin-top: 50px;
+  //padding: 20px;
+  //width: 700px;
 
 }
 
@@ -24,10 +25,9 @@ body {
 .grid-container {
   //border: 1px solid red;
   display: grid;
-  height: 1724px;
-  width: 1280px;
+ 
   grid-template-columns: [sidebar-start] 1fr [sidebar-end] 6fr [content-end];  // 188px 1092px
-  grid-template-rows: [topper-start] 71px [topper-end] 10px [general-statistic-start] 800px  [links-start] /*847px*/ 1fr [links-end];
+  grid-template-rows: [topper-start] 71px [topper-end] 5px [general-statistic-start] 1fr  [links-start] /*847px*/ 1fr [links-end];
   grid-auto-flow: row;
   justify-content: center; /* poziomie */
   align-content: center; /* pionie */
@@ -56,32 +56,27 @@ body {
   grid-column: sidebar-start / sidebar-end;
   grid-row: topper-start / links-end;
   background: $sidebar-nav;
-  //position: fixed;
+  position: fixed;
   height: 100%;
 }
 
 .topper {
   grid-column: sidebar-end / content-end;
   grid-row: topper-start / topper-end;
+  margin-left: -10px;
+  padding: 0;
 }
 
 .general-statistic {
   grid-column: sidebar-end / content-end;
   grid-row: general-statistic-start / links-start;
-  margin: 0.75% 1.5% 1.5% 1.5%; 
+  margin: 0.75% 1% 1.5% 1%; 
 }
 
 .links {
   grid-column: sidebar-end / content-end;
   grid-row: links-start / links-end;
-  margin: 0 1.5% 1.5% 1.5%;
-}
-
-.general-callender {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: flex;
-  justify-content: center;
+  margin: 0 1% 1.5% 1%;
 }
 
 .links-container {

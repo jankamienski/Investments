@@ -6,7 +6,7 @@
 }*/
 
 h2 {
-  font-size: 13px;
+  font-size: 15px;
   color: $side-bar-font-color;
   font-family: $paragraph-font;
   text-transform: uppercase;
@@ -52,13 +52,13 @@ li {
   filter: invert(83%) sepia(78%) saturate(0%) hue-rotate(202deg) brightness(50%) contrast(85%);
 }
 
-.dot {
+/*.dot {
   height: 10px;
   width: 10px;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-}
+}*/
 
 th {
   color: $side-bar-font-color;
