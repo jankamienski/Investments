@@ -49,6 +49,9 @@
   font-size: 13px;
   font-weight: 100;
   padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .total-amount {
@@ -71,7 +74,7 @@
 }
 
 .topper-profile {
-  width: 180px;
+  min-width: 180px;
 }
 
 .topper-return {
@@ -79,3 +82,9 @@
   padding-left: 10px;
 }
 
+
+.topper-side-cell {
+  a:hover {
+    transform: translate(-1px, -1px);
+  }
+}

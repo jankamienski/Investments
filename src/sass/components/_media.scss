@@ -93,13 +93,12 @@
   //}
 }*/
 
-@media (max-width: 1024px) {
-  /* Homepage */
+/* Homepage */
 
+@media (max-width: 1024px) {
   .grid-container {
     //border: 1px solid red;
     display: grid;
-   
     grid-template-columns: [sidebar-start] 1fr [sidebar-end] 6fr [content-end];  // 188px 1092px
     grid-template-rows: [general-statistic-start] 1fr  [links-start] /*847px*/ 1fr [links-end];
   }
@@ -111,6 +110,7 @@
     position: fixed;
     height: 100%;
     z-index: 2;
+    left: 0;
   }
   
   .topper {
@@ -122,9 +122,10 @@
 
   .side-topper {
     display: flex;
+    position: static;
   }
 
-  .topper-wrapper {
+  .topper-side-wrapper {
     display: flex;
     height: 200px;
     //margin-left: -30px;
@@ -136,7 +137,7 @@
     padding-left: 0;
   }
 
-  .topper-cell {
+  .topper-side-cell {
     margin: 0;
     padding: 0;
     border: 1px $side-bar-font-color;
@@ -163,7 +164,6 @@
 
   .section-name {
     padding: 0;
-    margin-left: 110px;
     height: 25px;
     
   }
@@ -172,13 +172,145 @@
     text-align: center;
   }
 
+  .subtitle-wrapper {
+    text-align: center;
+    padding-left: 0;
+  }
+
   .general-callender {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .earnings-chart {
+    text-align: center;
+  }
+
+  .link-wrapper {
+    .total-side-amount {
+      margin: 0 7px;
+    }
+
+    .topper-side-icon {
+      margin-left: -3px;
+    }
+  }
+
+  .topper-side-wrapper {
+    width: 30px;
+  }
+
+  .topper-side-cell {
+    width: 30px;
+  }
+
+  .user-side-name {
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .link-side-wrqpper {
+    width: 30px;
+  }
+
+  .topper-side-profile {
+    min-width: 140px;
+  }
+
+  //.sidebar {
+  // position: static;
+  //}
+}
+
+
+@media (max-width: 575.98px) {
+  .grid-container {
+    //border: 1px solid red;
+    display: grid;
+   
+    grid-template-columns: [sidebar-start] 1fr [sidebar-end] 6fr [content-end];  // 188px 1092px
+    grid-template-rows: [general-statistic-start] 1fr  [links-start] /*847px*/ 1fr [links-end];
+  }
+   
+  .sidebar {
+    grid-column: sidebar-start / sidebar-end;
     
-    margin-left: 180px;
+    background: $sidebar-nav;
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+  }
+  
+  .topper {
+    //grid-column: sidebar-start / sidebar-end;
+    // margin-top: 520px;
+    // position: fixed;
+    display: none;
+  }
+
+  .side-topper {
+    display: flex;
+    position: static;
+  }
+
+  .topper-side-wrapper {
+    display: flex;
+    height: 200px;
+    //margin-left: -30px;
+    // background: white;
+    // margin-top: 0;
+    //border: 1px solid #EEEEEB;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .topper-side-cell {
+    border: 1px $side-bar-font-color;
+    line-height: 1.4em;
+    vertical-align: baseline;
+    text-decoration: none;
+    outline: 0;
+    background: white;
+    width: 100%;
+    height: 80px;
+    background: $sidebar-nav;
+  }
+
+  .general-statistic {
+    grid-row: general-statistic-start / links-start;
+    margin: 0.75% 1% 1.5% 15%; 
+  }
+  
+  .links {
+    grid-row: links-start / links-end;
+    margin: 0 1% 1.5% 15%;
+  }
+
+  .section-name {
+    padding: 0;
+    height: 25px;
+    margin-left: 40px;
     
-    
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .subtitle-wrapper {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 40px;
+  }
+
+  .general-callender {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 40px;
   }
 
   .earnings-chart {
@@ -186,14 +318,41 @@
   }
 
   .general-wrapper {
-    margin-left: 120px;
+    margin-left: 40px;
   }
 
-  .general-wrapper {
-    margin-left: 160px;
+  .link-wrapper {
+    .total-side-amount {
+      margin: 0 7px;
+    }
+
+    .topper-side-icon {
+      margin-left: -3px;
+    }
+  }
+
+  .topper-side-wrapper {
+    width: 30px;
+  }
+
+  .topper-side-cell {
+    width: 30px;
+  }
+
+  .user-side-name {
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .topper-side-profile {
+    min-width: 140px;
   }
 
   //.sidebar {
   // position: static;
   //}
+
+
 }
