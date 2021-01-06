@@ -1,5 +1,4 @@
-
-/* gLOBAL */ 
+/* Global */ 
 
 body {
   Font-family: sans-serif;
@@ -10,9 +9,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  //padding: 20px;
-  //width: 700px;
-
 }
 
 .flex-container {
@@ -38,19 +34,8 @@ body {
 }
 
 .item {
-  //margin: 1px;
-  //border: 1px solid black;
   background: white;
 }
-
-/*.headero {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-self: stretch;
-  align-self: stretch;
-}*/
 
 .sidebar {
   grid-column: sidebar-start / sidebar-end;

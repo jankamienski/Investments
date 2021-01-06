@@ -140,10 +140,8 @@
 
     .manager-name {
       padding: 5px;
-      //margin-top: 10px;
       color: $links-color;
       width: 100%;
-      //padding: 5px;
       display: flex;
       align-items: center;
 
@@ -216,10 +214,6 @@ body.active .manager-wrapper {
 body.active .manager-name {
   display: none;
 }
-
-//body.active .link-wrapper {
-//  width: 30px;
-//}
 
 body.active .total-side-amount {
   display: none;
