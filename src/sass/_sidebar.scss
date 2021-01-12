@@ -170,90 +170,78 @@
   display: block;
 }
 
-body.active .sidebar {
-  width: 70px;
+body.active {
+  .sidebar {
+    width: 70px;
+  }
+
+  .title { 
+    display: none;
+    width: 2px;
+  }
+
+  .but-1 {
+    margin-left: 17px;
+    padding-right: 0;
+  }
+
+  .title-wrapper {
+    justify-content: flex-start;
+  }
+
+  .sidebar-menu-list-wrapper {
+    width: 30px;
+    height: 18px;
+    margin: 0;
+  }
+
+  .sidebar-menu-list-wrapper a {
+    color: $sidebar-nav;
+  }
+
+  .link-text,
+  .manager-title,
+  .manager-name,
+  .total-side-amount,
+  .user-side-name,
+  .topper-icon-side-arrow {
+    display: none;
+  }
+
+  .manager-wrapper {
+    width: 30px;
+    margin-top: 20px;
+  }
+
+  .sidebar-contact .manager-wrapper {
+    margin-left: -2px;
+  }
+
+  .grid-container {
+    grid-template-columns: [sidebar-start] 30px [sidebar-end] 1fr [content-end];
+  }
+
+  .sidebar-menu-list-wrapper {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+
+  .topper-side-profile {
+    min-width: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .topper-cell {
+    justify-content: stretch;
+  }
+
+  .section-name {
+    margin-left: 30px;
+  }
 }
 
-body.active .title { 
-  display: none;
-  width: 2px;
-}
-
-body.active .but-1 {
-  margin-left: 17px;
-  padding-right: 0;
-}
-
-body.active .title-wrapper {
-  justify-content: flex-start;
-}
-
-body.active .sidebar-menu-list-wrapper {
-  width: 30px;
-  height: 18px;
-  margin: 0;
-}
-
-body.active .sidebar-menu-list-wrapper a {
-  color: $sidebar-nav;
-}
-
-body.active .link-text {
-  display: none;
-}
-
-body.active .manager-title {
-  display: none;
-}
-
-body.active .manager-wrapper {
-  width: 30px;
-  margin-top: 20px;
-}
-
-body.active .manager-name {
-  display: none;
-}
-
-body.active .total-side-amount {
-  display: none;
-}
-
-body.active .user-side-name {
-  display: none;
-}
-
-body.active .sidebar-contact .manager-wrapper {
-  margin-left: -2px;
-}
-
-body.active .grid-container {
-  grid-template-columns: [sidebar-start] 30px [sidebar-end] 1fr [content-end];
-}
-
-body.active .sidebar-menu-list-wrapper {
-  margin-left: 12px;
-  margin-right: 0;
-}
-
-body.active .topper-side-profile {
-  min-width: 30px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-body.active .topper-cell {
-  justify-content: stretch;
-}
-
-body.active .section-name {
-  margin-left: 30px;
-}
-
-body.active .topper-icon-side-arrow {
-  display: none;
-}
 
 .side-topper {
   display: none;

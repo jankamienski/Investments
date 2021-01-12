@@ -3,7 +3,6 @@
 @media (max-width: 1024px) {
   .grid-container {
     display: grid;
-    grid-template-columns: [sidebar-start] 1fr [sidebar-end] 6fr [content-end];  // 188px 1092px
     grid-template-rows: [general-statistic-start] 1fr  [links-start] /*847px*/ 1fr [links-end];
   }
    
@@ -53,6 +52,10 @@
     grid-row: general-statistic-start / links-start;
     margin: 0.75% 1% 1.5% 1%; 
   }
+
+  .general-wrapper {
+    margin-left: 80px;
+  }
   
   .links {
     grid-row: links-start / links-end;
@@ -70,7 +73,7 @@
 
   .subtitle-wrapper {
     text-align: center;
-    padding-left: 0;
+    margin-left: 0;
   }
 
   .general-callender {
@@ -114,15 +117,34 @@
   .topper-side-profile {
     min-width: 140px;
   }
-}
 
+  .links-table {
+    margin-left: 160px;
+
+    th {
+      padding: 15px 80px 15px 0;
+    }
+  
+    td {  
+      padding: 15px 30px 15px 0;
+    }
+  }
+
+  body.active {
+    .general-statistic {
+      margin: 0.75% 1% 1.5% 3%; 
+    }
+    
+    .links {
+      margin: 0 1% 1.5% 3%;
+    }
+  }
+}
 
 @media (max-width: 575.98px) {
   .grid-container {
     //border: 1px solid red;
     display: grid;
-   
-    grid-template-columns: [sidebar-start] 1fr [sidebar-end] 6fr [content-end];  // 188px 1092px
     grid-template-rows: [general-statistic-start] 1fr  [links-start] /*847px*/ 1fr [links-end];
   }
    
@@ -167,12 +189,12 @@
 
   .general-statistic {
     grid-row: general-statistic-start / links-start;
-    margin: 0.75% 1% 1.5% 15%; 
+    margin: 0.75% 1% 1.5% 13%; 
   }
   
   .links {
     grid-row: links-start / links-end;
-    margin: 0 1% 1.5% 15%;
+    margin: 0 1% 1.5% 13%;
   }
 
   .section-name {
@@ -195,7 +217,7 @@
   .general-callender {
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-left: 40px;
+    margin-left: 120px;
   }
 
   .earnings-chart {
@@ -203,7 +225,7 @@
   }
 
   .general-wrapper {
-    margin-left: 40px;
+    margin-left: 80px;
   }
 
   .link-wrapper {
@@ -234,4 +256,15 @@
   .topper-side-profile {
     min-width: 140px;
   }
+
+  body.active {
+    .general-statistic {
+      margin: 0.75% 1% 1.5% 7%;; 
+    }
+    
+    .links {
+      margin: 0 1% 1.5% 7%;
+    }
+  }
+
 }

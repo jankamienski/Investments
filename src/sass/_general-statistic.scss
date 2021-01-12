@@ -70,15 +70,20 @@
   margin: 0 auto;
 }
 
-.scroll-wrapper {
+/*.scroll-wrapper {
   display: block;
   width: 100%;
   margin: 0 auto;
   overflow-x: auto;
 }
 
+.scroll-wrapper table {
+  width: 100%;
+  max-width: 100%;
+}*/
+
 .subtitle-wrapper {
-  padding-left: 13%;
+  margin-left: 270px;
 }
 
 .general-callender {

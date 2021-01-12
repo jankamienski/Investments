@@ -2,7 +2,7 @@
 
 body {
   Font-family: sans-serif;
-  margin: 0;
+  
 }
 
 .general-wrapper {
@@ -11,26 +11,14 @@ body {
   margin-top: 50px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-}
-
 .grid-container {
-  //border: 1px solid red;
   display: grid;
- 
-  grid-template-columns: [sidebar-start] 1fr [sidebar-end] 6fr [content-end];  // 188px 1092px
+  grid-template-columns: [sidebar-start] 70px [sidebar-end] 1fr [content-end];  // 188px 1092px
   grid-template-rows: [topper-start] 71px [topper-end] 5px [general-statistic-start] 1fr  [links-start] /*847px*/ 1fr [links-end];
   grid-auto-flow: row;
-  justify-content: center; /* poziomie */
-  align-content: center; /* pionie */
-  justify-items: stretch;
-  align-items: stretch;
   background: $table-background;
   grid-column-gap: 0;
+  width: 100%;
 }
 
 .item {
@@ -43,6 +31,7 @@ body {
   background: $sidebar-nav;
   position: fixed;
   height: 100%;
+  left: 0;
 }
 
 .topper {
@@ -55,13 +44,13 @@ body {
 .general-statistic {
   grid-column: sidebar-end / content-end;
   grid-row: general-statistic-start / links-start;
-  margin: 0.75% 1% 1.5% 1%; 
+  margin: 0.75% 1% 1% 3%; 
 }
 
 .links {
   grid-column: sidebar-end / content-end;
   grid-row: links-start / links-end;
-  margin: 0 1% 1.5% 1%;
+  margin: 0 1% 1.5% 3%;
 
   .section-name {
     border-top: 1px solid $background-color;
@@ -78,7 +67,8 @@ body {
 }
 
 .section-name {
-  padding: 0 16px;
+  padding: 0 60px;
   height: 25px;
+  
 }
 
