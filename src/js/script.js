@@ -1,3 +1,5 @@
+/* global Chart */
+
 const sliderButton = document.querySelector('.hamburger');
 const sliderMenu = document.querySelector('body');
 
@@ -7,7 +9,7 @@ sliderButton.addEventListener('click', function(event) {
   //topper.classList.toggle('hide');
 });
 
-/* global Chart */
+
 
 const ctx = document.getElementById('myChart').getContext('2d');
 
@@ -46,10 +48,6 @@ const chart = new Chart(ctx, {
 
   options: {
     responsive: true,
-    //maintainAspectRatio: false.
-    legend: {
-      display: false,
-    }
   }
 
 });
