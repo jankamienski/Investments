@@ -37,12 +37,9 @@
   }
 
   .general-statistic {
-
     margin: 20px; 
   }
 
-  
-  
   .section-name {
     padding: 0;
     height: 25px;
@@ -55,6 +52,7 @@
   .subtitle-wrapper {
     text-align: center;
     margin-left: 0;
+    padding-left: 0;
   }
 
   .general-callender {
@@ -112,7 +110,11 @@
   }
 }
 
-@media (max-width: 575.98px) {  
+@media (max-width: 575.98px) {
+  .general-statistic {
+    padding-left: 0;
+  }  
+    
   .sidebar {
     z-index: 2;
   }
@@ -160,20 +162,28 @@
   .subtitle-wrapper {
     text-align: center;
     padding-left: 0;
+    padding-bottom: 60px;
   }
 
   .general-callender {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 30px;
+    padding-left: 80px;
+    margin-left: 80px;
   }
 
   .earnings-chart {
     text-align: center;
+    width: 140%;
+    padding-left: 0;
+  }
+
+  .chart-container {
+    width: 100%;
   }
 
   .general-wrapper {
-    margin-left: 60px;
+    padding-left: 120px;
     display: block;
   }
 
