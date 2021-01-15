@@ -151,7 +151,6 @@
 
       &:hover {
         background-color: $sidebar-hover-background;
-        //border: 1px solid $background-color;
       }
     }
 
@@ -220,10 +219,6 @@ body.active {
     margin-left: -2px;
   }
 
-  .grid-container {
-    grid-template-columns: [sidebar-start] 30px [sidebar-end] 1fr [content-end];
-  }
-
   .sidebar-menu-list-wrapper {
     margin-left: 12px;
     margin-right: 0;
@@ -238,10 +233,6 @@ body.active {
 
   .topper-cell {
     justify-content: stretch;
-  }
-
-  .section-name {
-    margin-left: 30px;
   }
 }
 
