@@ -4,7 +4,7 @@
   .sidebar {
     z-index: 2;
   }
-  
+
   .topper {
     display: none;
   }
@@ -37,7 +37,7 @@
   }
 
   .general-statistic {
-    margin: 20px; 
+    margin: 20px;
   }
 
   .section-name {
@@ -103,8 +103,8 @@
     th {
       padding: 15px 80px 15px 0;
     }
-  
-    td {  
+
+    td {
       padding: 15px 30px 15px 0;
     }
   }
@@ -113,12 +113,12 @@
 @media (max-width: 575.98px) {
   .general-statistic {
     padding-left: 0;
-  }  
-    
+  }
+
   .sidebar {
     z-index: 2;
   }
-  
+
   .topper {
     display: none;
   }
@@ -152,7 +152,7 @@
     padding: 0;
     height: 25px;
     margin-left: 15px;
-    
+
   }
 
   h2 {
@@ -168,18 +168,6 @@
   .general-callender {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 80px;
-    margin-left: 80px;
-  }
-
-  .earnings-chart {
-    text-align: center;
-    width: 140%;
-    padding-left: 0;
-  }
-
-  .chart-container {
-    width: 100%;
   }
 
   .general-wrapper {

@@ -1,8 +1,8 @@
-/* Global */ 
+/* Global */
 
 body {
-  Font-family: sans-serif;
-  
+  font-family: sans-serif;
+  background: yellow;
 }
 
 .general-wrapper {
@@ -13,9 +13,19 @@ body {
 
 .grid-container {
   max-width: 100%;
-  padding-left: 70px;
   display: flex;
   flex-direction: column;
+  margin: 100px 20px 20px 196px;
+}
+
+body.active  {
+  .grid-container {
+    margin-left: 90px;
+  }
+
+ .topper {
+    width: calc(100% - 70px);
+  }
 }
 
 .item {
@@ -27,12 +37,17 @@ body {
   position: fixed;
   height: 100%;
   left: 0;
+  top: 0;
 }
 
 .topper {
-  margin-left: -10px;
-  padding: 0;
+  position: fixed;
+  background: white;
+  width: calc(100% - 176px);
+  right: 0;
+  top: 0;
 }
+
 
 .general-statistic {
   padding-left: 53px;
@@ -60,6 +75,5 @@ body {
 .section-name {
   padding: 0 80px;
   height: 25px;
-  
-}
 
+}

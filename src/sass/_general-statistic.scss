@@ -7,7 +7,7 @@
       display: flex;
       justify-content: center;
       margin-top: 20px;
-    
+
       img {
         width: 80%;
         height: 80%;
@@ -49,8 +49,8 @@
 
   a {
     padding: 0 15px;
-    
-    
+
+
 
     &:hover {
       color: $links-color;
@@ -68,7 +68,7 @@
 
 .chart-container {
   position: relative;
-  width: calc(100% - 100px);
+  width: 100%;
   margin: 0 auto;
 }
 

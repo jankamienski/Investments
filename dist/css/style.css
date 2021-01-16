@@ -343,7 +343,8 @@ template {
 
 /* Global */
 body {
-  Font-family: sans-serif;
+  font-family: sans-serif;
+  background: yellow;
 }
 
 .general-wrapper {
@@ -356,11 +357,19 @@ body {
 
 .grid-container {
   max-width: 100%;
-  padding-left: 70px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  margin: 100px 20px 20px 196px;
+}
+
+body.active .grid-container {
+  margin-left: 90px;
+}
+
+body.active .topper {
+  width: calc(100% - 70px);
 }
 
 .item {
@@ -372,11 +381,15 @@ body {
   position: fixed;
   height: 100%;
   left: 0;
+  top: 0;
 }
 
 .topper {
-  margin-left: -10px;
-  padding: 0;
+  position: fixed;
+  background: white;
+  width: calc(100% - 176px);
+  right: 0;
+  top: 0;
 }
 
 .general-statistic {
@@ -821,7 +834,7 @@ body.active .topper-cell {
 
 .chart-container {
   position: relative;
-  width: calc(100% - 100px);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -867,6 +880,11 @@ a:-webkit-any-link {
   z-index: 1;
   padding: 0;
   margin-left: -7px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .data-table {
@@ -1241,16 +1259,6 @@ th {
   .general-callender {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 80px;
-    margin-left: 80px;
-  }
-  .earnings-chart {
-    text-align: center;
-    width: 140%;
-    padding-left: 0;
-  }
-  .chart-container {
-    width: 100%;
   }
   .general-wrapper {
     padding-left: 120px;
