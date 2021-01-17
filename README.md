@@ -1,1 +1,1 @@
-https://jankamienski.github.io/Investments/
+https://jankamienski.github.io/Investments/dist/index.html
