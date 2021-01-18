@@ -6,10 +6,7 @@ const sliderMenu = document.querySelector('body');
 sliderButton.addEventListener('click', function(event) {
   event.preventDefault();
   sliderMenu.classList.toggle('active');
-  //topper.classList.toggle('hide');
 });
-
-
 
 const ctx = document.getElementById('myChart').getContext('2d');
 

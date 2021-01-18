@@ -46,8 +46,8 @@ body.active  {
   width: calc(100% - 176px);
   right: 0;
   top: 0;
+  z-index: 1;
 }
-
 
 .general-statistic {
   padding-left: 53px;
@@ -69,10 +69,13 @@ body.active  {
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  .general-wrapper {
+    margin-top: 10px;
+  }
 }
 
 .section-name {
   padding: 0 80px;
   height: 25px;
-
 }

@@ -126,7 +126,7 @@ body.active .topper { width: calc(100% - 70px); }
 
 .sidebar { background: #191919; position: fixed; height: 100%; left: 0; top: 0; }
 
-.topper { position: fixed; background: white; width: calc(100% - 176px); right: 0; top: 0; }
+.topper { position: fixed; background: white; width: calc(100% - 176px); right: 0; top: 0; z-index: 1; }
 
 .general-statistic { padding-left: 53px; margin-bottom: 50px; }
 
@@ -135,6 +135,8 @@ body.active .topper { width: calc(100% - 70px); }
 .links .section-name { border-top: 1px solid #EEEEEB; border-bottom: 1px solid #EEEEEB; padding-bottom: 12px; }
 
 .links-container { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; width: 100%; }
+
+.links-container .general-wrapper { margin-top: 10px; }
 
 .section-name { padding: 0 80px; height: 25px; }
 
@@ -389,10 +391,13 @@ th { color: #808080; font-size: 15px; font-family: "Open Sans", Helvetica, Arial
 @media (max-width: 575.98px) { .links { padding-left: 0; margin-right: 20px; }
   .links-container .general-wrapper { display: block; }
   .container { text-align: center; }
+  .container input { padding: 5px; margin: 5px; }
+  .container .btn-cal { text-align: center; }
   .grid-container { margin: 0 auto; }
-  .general-callender { display: block; padding-top: 25px; padding-bottom: 25px; }
-  .general-callender .icon { display: block; margin-left: 47px; }
+  .general-callender { display: block; padding-top: 25px; padding-bottom: 75px; padding-left: 10px; position: relative; }
+  .general-callender .icon { display: block; position: absolute; left: 50%; transform: translate(-50%); }
   .general-statistic { padding-left: 0; margin-bottom: 0; }
+  .chart-container { width: 90%; }
   .sidebar { z-index: 2; }
   .topper { display: none; }
   .side-topper { display: -ms-flexbox; display: flex; position: static; }
@@ -413,6 +418,3 @@ th { color: #808080; font-size: 15px; font-family: "Open Sans", Helvetica, Arial
   .links-container table tr th, .links-container table tr td { padding: 10px 20px; }
   .links-container table tr td { border: 1px solid; margin: 0 -1px -1px 0; padding-top: 35px; position: relative; width: 80%; }
   .links-container table tr span { background: #eee; color: dimgrey; display: none; font-size: 10px; font-weight: bold; padding: 5px; position: absolute; text-transform: uppercase; top: 0; left: 0; display: block; } }
-
-/* Sections */
-/* Pages / Views */

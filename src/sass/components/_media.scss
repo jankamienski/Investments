@@ -133,6 +133,15 @@
 
   .container {
     text-align: center;
+
+    input {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .btn-cal {
+      text-align: center;
+    }
   }
 
   .grid-container {
@@ -142,18 +151,25 @@
   .general-callender {
     display: block;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 75px;
+    padding-left: 10px;
+    position: relative;
 
     .icon {
       display: block;
-      margin-left: 47px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
     }
   }
 
-  
   .general-statistic {
     padding-left: 0;
     margin-bottom: 0;
+  }
+
+  .chart-container {
+    width: 90%;
   }
 
   .sidebar {
@@ -234,7 +250,6 @@
   .topper-side-profile {
     min-width: 140px;
   }
-
 
   .links-container {
     table {
