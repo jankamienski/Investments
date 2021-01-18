@@ -392,7 +392,7 @@ th { color: #808080; font-size: 15px; font-family: "Open Sans", Helvetica, Arial
   .grid-container { margin: 0 auto; }
   .general-callender { display: block; padding-top: 25px; padding-bottom: 25px; }
   .general-callender .icon { display: block; margin-left: 47px; }
-  .general-statistic { padding-left: 0; margin-left: 0; }
+  .general-statistic { padding-left: 0; margin-bottom: 0; }
   .sidebar { z-index: 2; }
   .topper { display: none; }
   .side-topper { display: -ms-flexbox; display: flex; position: static; }
