@@ -8,6 +8,10 @@ sliderButton.addEventListener('click', function(event) {
   sliderMenu.classList.toggle('active');
 });
 
+if (document.body.clientWidth < 1024) { 
+  document.querySelector('body').classList.add('active'); 
+}
+
 const ctx = document.getElementById('myChart').getContext('2d');
 
 // eslint-disable-next-line
